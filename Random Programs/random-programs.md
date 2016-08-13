@@ -592,3 +592,229 @@ void main()
 	}
 
 ```
+
+#### Sorting n numbers
+```c
+//sorting n numbers
+#include<conio.h>
+#include<stdio.h>
+#include<stdlib.h>
+void reorder(int n,int *x);
+void main()
+	{
+	int i,*x,n;
+	clrscr();
+	printf("\nHow many numbers  ?  :");
+	scanf("%d",&n);
+	printf("\n");
+	x=(int*)malloc(n*sizeof(int));
+	printf("\nEnter the numbers   :");
+	for(i=0;i<n;i++)
+		{
+		printf("\ni=%d x=",i+1);
+		scanf("%d",x+i);
+		}
+	reorder(n,x);
+	printf("\nReordered list    :");
+	for(i=0;i<n;i++)
+	printf("\n\n\ti=%d x=%d\n",i+1,*(x+i));
+	getch();
+	}
+void reorder(int n,int *x)
+	{
+	int i,j,temp;
+	for(j=0;j<n-1;j++)
+		{
+		for(i=j+1;i<n;++i)
+			{
+			if(*(x+i)<*(x+j))
+				{
+				temp=*(x+j);
+				*(x+j)=*(x+i);
+				*(x+i)=temp;
+				}
+			}
+		}
+	return;
+	}
+
+
+```
+
+####
+//program to dynamically memory allocation
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#define NULL 0
+void main()
+	{
+	char *buffer;
+	clrscr();
+	if((buffer=(char*)malloc(10))==NULL)
+		{
+		printf("\nMalloc Failed  ");
+		exit(0);
+		}
+	printf("\nBuffer of size 10 is created    ");
+	strcpy(buffer,"DELHI");
+	printf("\n\nBuffer contains  %s   ",buffer);
+	if((buffer=(char*)realloc(buffer,15))==NULL)
+		{
+		printf("\nReallocation  Failed  ");
+		exit(0);
+		}
+	printf("\nBuffer size is modified  ");
+
+	printf("\nBuffer  size contains %s    ",buffer);
+	strcpy(buffer," NEW DELHI");
+	printf("\n\n Now Buffer contains  %s   ",buffer);
+	free(buffer);
+	getch();
+	}
+
+#### Employee  Database
+
+
+//employee database
+#include<stdio.h>
+#include<conio.h>
+struct date
+	{
+	int day,mon,year;
+	};
+struct emp
+	{
+	char name[80],deg[80];
+	int  code,basic,hra,da,ta,gross;
+	struct date doj;
+	}e[100];
+void main()
+	{
+	int i,n;
+	clrscr();
+
+	printf("\n\nHow many records do you want   :");
+	scanf("%d",&n);
+
+	for(i=0;i<n;i++)
+		{
+		printf("\n\nEnter details of employee %d ",i+1);
+		printf("\nName                  :");
+		scanf("%s",e[i].name);
+		printf("\n\nID number           :");
+		scanf("%d",&e[i].code);
+		printf("\n\nDesignation         :");
+		scanf("%s",e[i].deg);
+		printf("\n\nBasic Salary        :Rs ");
+		scanf("%d",&e[i].basic);
+		e[i].hra=e[i].basic*40/100;
+		e[i].da=e[i].basic*10/100;
+		e[i].ta=e[i].basic*10/100;
+		e[i].gross=e[i].basic+e[i].hra+e[i].ta+e[i].da;
+		printf("\nDate of joining [dd/mm/yy]  :");
+		scanf("%d%d%d",&e[i].doj.day,&e[i].doj.mon,&e[i].doj.year);
+		}
+	clrscr();
+	printf("\n\n\t\tEMPLOYEE DATABASE  ");
+	printf("\n\nÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ");
+	printf("\n\nS.No ID No.  NAME\tDESIGNATION\tDATE OF JOIN \tBASIC\tGROSS");
+	printf("\n\nÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ");
+	for(i=0;i<n;i++)
+		{
+		printf("\n\n%d   %d\t%s\t\t%s\t%d/%d/%d\t%d\t%d",i+1,e[i].code,e[i].name,e[i].deg,e[i].doj.day,e[i].doj.mon,e[i].doj.year,e[i].basic,e[i].gross);
+		}
+	getch();
+	}
+
+
+#### Student DATABASE
+//student database
+#include<stdio.h>
+#include<conio.h>
+struct date
+	{
+	int day,mon,year;
+	};
+struct student
+	{
+	char name[80], clas[5];
+	int roll,mp,mc,mcs,mm,me,total,avg;
+	struct date doj;
+	}e[100];
+void main()
+	{
+	int i,n;
+	clrscr();
+
+	printf("\n\nHow many records do you want   :");
+	scanf("%d",&n);
+
+	for(i=0;i<n;i++)
+		{
+		printf("\n\nEnter details of student %d ",i+1);
+		printf("\nName                  :");
+		scanf("%s",e[i].name);
+		printf("\n\nClass               :");
+		scanf("%s",e[i].clas);
+		printf("\n\nRoll Number         :");
+		scanf("%d",&e[i].roll);
+		printf("\n\nMarks in 5 subjects   :");
+		scanf("%d%d%d%d%d",&e[i].mp,&e[i].mc,&e[i].mm,&e[i].mcs,&e[i].me);
+
+
+		e[i].total=e[i].mp+e[i].mc+e[i].mcs+e[i].mm+e[i].me;
+		e[i].avg=e[i].total/5;
+		printf("\nDate of Birth [dd/mm/yy]  :");
+		scanf("%d%d%d",&e[i].doj.day,&e[i].doj.mon,&e[i].doj.year);
+		}
+	clrscr();
+	printf("\n\n\t\tSTUDENT DATABASE  ");
+	printf("\n\nÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ");
+	printf("\n\nS.No   NAME\tCLASS\tROLL \tDATE OF BIRTH\tTOTAL\t AVERAGE");
+	printf("\n\nÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ");
+	for(i=0;i<n;i++)
+		{
+		printf("\n\n%d    %s\t%s\t%d\t%d/%d/%d\t%d \t%d",i+1,e[i].name,e[i].clas,e[i].roll,e[i].doj.day,e[i].doj.mon,e[i].doj.year,e[i].total,e[i].avg);
+		}
+	getch();
+	}
+
+
+####File handling
+
+#include<conio.h>
+#include<stdio.h>
+void main()
+	{
+	char ch,inf[40],in2f[40],ofile[40];
+	FILE *fin,*fout,*fin2;
+	clrscr();
+	printf("\nEnter  file1  :");
+	gets(inf);
+	printf("\nEnter  file2  :");
+	gets(in2f);
+	printf("\nEnter  destination file  :");
+	gets(ofile);
+	if((fin=fopen(inf,"r"))==NULL)
+	printf("\nFile does not exist  ");
+	if((fin2=fopen(in2f,"r"))==NULL)
+	printf("\nFile does not exist  ");
+	if((fout=fopen(ofile,"w"))==NULL)
+	printf("\nFile does not exist  ");
+	else
+		{
+		while(!feof(fin))
+			{
+			ch=getc(fin);
+			putc(ch,fout);
+			}
+		while(!feof(fin2))
+			{
+			ch=getc(fin2);
+			putc(ch,fout);
+			}
+		}
+	fcloseall();
+	getch();
+	}
