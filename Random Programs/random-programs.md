@@ -647,8 +647,8 @@ void reorder(int n,int *x)
 
 ```
 
-####
-//program to dynamically memory allocation
+#### program to dynamically memory allocation
+```c
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
@@ -678,10 +678,10 @@ void main()
 	free(buffer);
 	getch();
 	}
-
+```
 #### Employee  Database
 
-
+```c
 //employee database
 #include<stdio.h>
 #include<conio.h>
@@ -733,8 +733,9 @@ void main()
 	getch();
 	}
 
-
+```
 #### Student DATABASE
+```c
 //student database
 #include<stdio.h>
 #include<conio.h>
@@ -785,10 +786,10 @@ void main()
 		}
 	getch();
 	}
-
+```
 
 ####File handling
-
+```c
 #include<conio.h>
 #include<stdio.h>
 void main()
@@ -824,3 +825,5 @@ void main()
 	fcloseall();
 	getch();
 	}
+  
+```
