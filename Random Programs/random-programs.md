@@ -87,8 +87,8 @@ Enter the number     :  567
 
 567 is  not a palindrome number
 
-####    PROGRAM  : FACTORIAL OF A NUMBER          .
-
+####    PROGRAM  : FACTORIAL OF A NUMBER.
+```c
 #include<conio.h>
 #include<stdio.h>
 void main()
@@ -109,12 +109,13 @@ void main()
 		}
 	getch();
 	}
-
+```
 OUTPUT:
 Enter the number   : 5
 Factorial of given number  = 120
 
 #### Program for simple calculator
+```c
 #include<conio.h>
 #include<stdio.h>
 void main()
@@ -150,8 +151,10 @@ void main()
 		}
 	getch();
 	}
+```
 
 #### Fibonacci series
+```c
 #include<conio.h>
 #include<iostream.h>
 void main()
@@ -184,8 +187,10 @@ void main()
 	while(ch=='y');
 	getch();
 	}
+```
 
 #### Bubble sort
+```c
 //program to bubble sorting
 #include<conio.h>
 #include<stdio.h>
@@ -220,8 +225,9 @@ void main()
 		}
 	getch();
 	}
-
+```
 #### Working with Matrix
+```c
 #include<stdio.h>
 #include<conio.h>
 int a[20][20];
@@ -492,7 +498,7 @@ void main()
 	add_columns();
 	getch();
 	}
-
+```
 #### String operations
 
 ```c
