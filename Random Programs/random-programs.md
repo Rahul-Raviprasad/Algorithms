@@ -1,6 +1,23 @@
-## Few old C programs I found.
+## Few old C programs I found from my College days.
 
-#### PROGRAM  : REVERSING A GIVEN NUMBER  .
+1. Reversing a Given Number - 'Language': 'C'
+2. Sum of Digits of a Number - 'C'
+3. Finding a number is a Palindrome or not
+4. Factorial
+5. Simple Calculator
+6. Fibonacci Series
+7. Bubble Sort
+8. Working with Matrix
+9. String operations
+10. Swapping
+11. Sorting n numbers
+12. Dynamic memory allocation
+13. Employee Database
+14. Student Database
+15. File handling
+
+
+#### PROGRAM  : 1. REVERSING A GIVEN NUMBER.
 ```c
 #include<conio.h>
 #include<stdio.h>
@@ -26,7 +43,7 @@ Enter the number   : 473
 Reverse of given number   :374
 
 
-#### PROGRAM  : SUM OF DIGITS OF A NUMBER  .
+#### PROGRAM  : 2. SUM OF DIGITS OF A NUMBER  .
 
 ```c
 #include<stdio.h>
@@ -52,7 +69,7 @@ OUTPUT :
 Enter a number     : 473
 Sum of digits of given number is = 14
 
-#### PROGRAM  : FINDING A NUMBER IS   PALINDROME OR NOT                 .                 
+#### PROGRAM  : 3. FINDING A NUMBER IS PALINDROME OR NOT                 .                 
 
 ```c
 #include<stdio.h>
@@ -87,7 +104,7 @@ Enter the number     :  567
 
 567 is  not a palindrome number
 
-####    PROGRAM  : FACTORIAL OF A NUMBER.
+####    PROGRAM  : 4. FACTORIAL OF A NUMBER.
 ```c
 #include<conio.h>
 #include<stdio.h>
@@ -114,7 +131,7 @@ OUTPUT:
 Enter the number   : 5
 Factorial of given number  = 120
 
-#### Program for simple calculator
+#### 5. Program for simple calculator
 ```c
 #include<conio.h>
 #include<stdio.h>
@@ -153,7 +170,7 @@ void main()
 	}
 ```
 
-#### Fibonacci series
+#### 6. Fibonacci series
 ```c
 #include<conio.h>
 #include<iostream.h>
@@ -189,7 +206,7 @@ void main()
 	}
 ```
 
-#### Bubble sort
+#### 7. Bubble sort
 ```c
 //program to bubble sorting
 #include<conio.h>
@@ -226,7 +243,7 @@ void main()
 	getch();
 	}
 ```
-#### Working with Matrix
+#### 8. Working with Matrix
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -499,7 +516,7 @@ void main()
 	getch();
 	}
 ```
-#### String operations
+#### 9. String operations
 
 ```c
 #include<stdio.h>
@@ -571,7 +588,7 @@ void main()
 
 ```
 
-#### program to swapping
+#### 10. program to swapping
 
 ```c
 #include<conio.h>
@@ -599,7 +616,8 @@ void main()
 
 ```
 
-#### Sorting n numbers
+#### 11. Sorting n numbers
+
 ```c
 //sorting n numbers
 #include<conio.h>
@@ -647,7 +665,7 @@ void reorder(int n,int *x)
 
 ```
 
-#### program to dynamically memory allocation
+#### 12. program to dynamically memory allocation
 ```c
 #include<stdio.h>
 #include<conio.h>
@@ -679,7 +697,7 @@ void main()
 	getch();
 	}
 ```
-#### Employee  Database
+#### 13. Employee  Database
 
 ```c
 //employee database
@@ -734,7 +752,7 @@ void main()
 	}
 
 ```
-#### Student DATABASE
+#### 14. Student DATABASE
 ```c
 //student database
 #include<stdio.h>
@@ -788,7 +806,7 @@ void main()
 	}
 ```
 
-####File handling
+#### 15. File handling
 ```c
 #include<conio.h>
 #include<stdio.h>
@@ -825,5 +843,5 @@ void main()
 	fcloseall();
 	getch();
 	}
-  
+
 ```
