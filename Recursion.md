@@ -44,3 +44,39 @@ public static int factorial(int n) throws IllegalArgumentException {
 A recursion trace closely mirrors a programming language's execution of the recursion.
 In Java, each time a method (recursive or otherwise) is called, a structure known as an activation record or activation frame is created to store information about the progress of that invocation of the method. This frame stores the parameters and local variables specific to a given call of the method, and information about which command in the body of the method is currently executing.
 When the execution of a method leads to a nested method call, the execution of the former call is suspended and its frame stores the place in the source code at which the flow of control should continue upon return of the nested call. A new frame is then created for the nested method call. This process is used both in the standard case of one method calling a different method, or in the recursive case where a method invokes itself. The key point is to have a separate frame for each active call.
+
+### English Ruler - A fractal pattern example.
+
+```java
+/* Draw an english ruler for given number of inches and major tick lengths*/
+public static void drawRuler(int nInches, int majorlength) {
+  drawLine(majorLength, 0); // draw inch 0 line and label
+  for(int j = 1; j <= nInches; j++) {
+    drawInterval(majorLength -  1);  // draw interior ticks for inch
+    drawLine(majorLength, j); // draw inch j line and label
+  }
+ }
+
+ public static void drawInterval(int centralLength) {
+   if(centralLength >= 1) {
+    drawInterval(centralLength - 1); //recursively draw top interval
+    drawLine(centralLength); // draw center tick line(without label)
+    drawInterval(centralLength - 1); //recursively draw the bottom interval
+   }
+ }
+
+ public static void drawLine(int tickLength, int tickLabel) {
+   for (int j = 0; j < tickLength; j++) {
+     System.out.print("-");
+     if(tickLabel >= 0)
+       System.out.print(" " + tickLabel);
+     System.out.print("\n");
+   }
+ }
+
+ /*Draws a line with the given tick length, but can't choose a tickLabel*/
+ public static void drawLine(int tickLength) {
+   drawLine(tickLength, -1);
+ }
+
+```
