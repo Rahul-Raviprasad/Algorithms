@@ -80,3 +80,8 @@ public static void drawRuler(int nInches, int majorlength) {
  }
 
 ```
+
+### Binary Search
+It is very easily among the most important of computer algorithm, and it is the reason that so often we store data in a sorted order.
+To read more on Binary Search goto:
+https://github.com/Rahul-Raviprasad/Algorithms/blob/master/Binary%20Search/Binary-Search.md
