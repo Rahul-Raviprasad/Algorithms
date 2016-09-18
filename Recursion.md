@@ -16,6 +16,22 @@ Recursion is a technique by which a method makes one or more calls to itself dur
 
 5. The File system for a computer has a recursive structure in which directories can be nested arbitrarily deeply within other directories. Recursive algorithms are widely used to explore and manage these file systems.
 
+6. Fibonacci series
+
+7. Merge sort, Quick sort
+
+8. Tree traversals and many tree problems: InOrder, PreOrder, PostOrder
+
+9. Graph traversals: DFS(Depth first Search) and BFS(Breadth first search)
+
+10. Dynamic programming Examples
+
+11. Divide and Conquer algorithms
+
+12. Towers of hanoi
+
+13. Backtracking Algorithms   
+
 ### The factorial function
 The factorial function is mathematically defined as follows
 
@@ -115,3 +131,11 @@ Iteration
 * Each iteration does not require any extra space.
 * An infinite loop could loop for ever since there is no extra memory being created or required.
 * Iterative solutions to a problem may not always be obvious as a recursive solution.
+
+### Notes on recursion
+* Recursive algorithms have two types of cases, recursive cases and base cases.
+* Every recursive function case must terminate at base case.
+* Generally iterative solutions are more efficient than recursive solutions[due to the overhead of function calls]
+* A recursive algorithm can be implemented with recursive function call using a stack, but usually it's more trouble than it is worth. That means any problem that can be solved recursively can be solved iteratively.
+* For some problems there are no obvious iterative solutions
+* Some problems are best suited for recursive algorithms while other are not.
