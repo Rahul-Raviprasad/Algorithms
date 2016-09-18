@@ -99,3 +99,19 @@ Eliminating Tail recursion
 
 ## Recursion and Memory (Visualization)
 Each recursive call makes a new copy of that method (actually only the variables) in memory. Once a method ends (that is returns some data), the copy of that returning method is removed from memory. The recursive solutions look simple but visualization and tracing takes time.
+
+## Recursion vs Iteration. Which is better?
+Answer to this question, depends on what we are trying to do?
+A recursive approach mirrors the problem we are trying to solve. A recursive approach makes it simpler to solve a problem which may not have the most obvious of solution. But recursion adds overhead for each recursive call it makes(needs space on the stack frame)
+
+Recursion
+* Terminates when a base case is reached.
+* Each recursive call requires extra space on the stack frame(memory).
+* If we get infinite recursion, the program may run out of memory and gives stack overflow.
+* Solution to some problems are easier to formulate recursively.
+
+Iteration
+* Terminates when the condition is proven to be false.
+* Each iteration does not require any extra space.
+* An infinite loop could loop for ever since there is no extra memory being created or required.
+* Iterative solutions to a problem may not always be obvious as a recursive solution.
