@@ -139,3 +139,20 @@ Iteration
 * A recursive algorithm can be implemented with recursive function call using a stack, but usually it's more trouble than it is worth. That means any problem that can be solved recursively can be solved iteratively.
 * For some problems there are no obvious iterative solutions
 * Some problems are best suited for recursive algorithms while other are not.
+
+
+## Backtracking
+
+Backtracking is a method of exhaustive search using divide and conquer.
+* Sometimes the best algorithm for a problem is try all possibilities.
+* This is always slow, but there are standard tools that can be used to help.
+* Tools: algorithms for generating basic objects, such as binary strings[2^n possibilities for n-bit strings], permutations[n!], combinations[n!/r!(n-r!)], general strings [k - ary strings of length n has k^n possibilities], etc ...
+* Backtracking speeds the exhaustive search by pruning.
+
+## Example Algorithms for Backtracking
+1. Binary Strings: generating all binary strings
+2. Generatign k - ary strings
+3. The Knapsack problem
+4. Generalized strings
+5. Hamiltonian Cycles
+6. Graph coloring problem
