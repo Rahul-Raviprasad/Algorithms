@@ -1,4 +1,4 @@
-#Recursion
+# Recursion
 
 keywords: Recursion, recursive trace, activation record, activation frame
 
@@ -96,3 +96,6 @@ Given the recursive nature of the file-system representation, it should not come
 
 ## Tail Recursion
 Eliminating Tail recursion
+
+## Recursion and Memory (Visualization)
+Each recursive call makes a new copy of that method (actually only the variables) in memory. Once a method ends (that is returns some data), the copy of that returning method is removed from memory. The recursive solutions look simple but visualization and tracing takes time.
