@@ -26,6 +26,21 @@ Deterministic Algorithms solve the problem with a predefined process whereas non
 ### Exact vs Approximate
 Algorithms for which we are able to find exact solutions are Exact Algorithms. If we don't have optimal solution, then we give approximation algorithms. approximation algorithms are generally associated with NP-hard problems.
 
+## Classifying Algorithms based on Design Method
+
+### Greedy Algorithms
+Greedy Algorithms work in stages and in each stage a decision is made based on the local best without considering the future. It assumes that local best solution can give a globally optimized solution.
+
+### Divide and Conquer
+The Divide and Conquer strategy works on these steps
+1. Divide: Breaking the problem into sub problems which are themselves smaller versions of the same type of problem.
+2. Recursion: recursively solve these sub problems
+3. Conquer: Appropriately combine their answers.
+Example: merge sort and binary search algorithms.
+
+### Dynamic Programming
+
+
 ## Resources
 The Algorithms have been studied, taken from many resources online. Few of the significant ones are
 1. Introduction to Algorithms, CLRS
