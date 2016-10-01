@@ -39,6 +39,13 @@ The Divide and Conquer strategy works on these steps
 Example: merge sort and binary search algorithms.
 
 ### Dynamic Programming
+Dynamic Programming and memoization work together. In DP by using memoization(maintaining a table for already solved sub problems) DP reduces exponential complexity to polynomial complexity  for many problems.
+
+### Linear Programming
+In linear programming, there are inequalities in terms of inputs and maximize(or minimize) some linear functions of the inputs. Many problems like maximum flow for linear graphs can be spoken in terms of linear programming.
+
+### Reduction (Transform and Conquer)
+In this case we reduce the problem by transforming it in a form for which asymptotically optimal algorithms.
 
 
 ## Resources
