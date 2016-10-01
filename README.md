@@ -46,6 +46,16 @@ In linear programming, there are inequalities in terms of inputs and maximize(or
 
 ### Reduction (Transform and Conquer)
 In this case we reduce the problem by transforming it in a form for which asymptotically optimal algorithms.
+In this case the goal is to find a reducing algorithm which is not dominated by the resulting reduced algorithms.
+
+## Classifying Algorithms based on Domain
+In computer science there are broad fields which require their own algorithms or use it frequently. Some areas are
+Search algorithms, sorting algorithms, merge algorithms, numerical algorithms, graph algorithms, string algorithms,  geometric algorithms, combinatorial algorithms, machine learning, cryptography, Parallel Algorithms, data compression algorithms and parsing techniques
+
+## Other ways to classify Algorithms
+* Based on complexity
+* Randomized Algorithm
+* Branch and Bound enumeration and Backtracking used in Artificial intelligence.
 
 
 ## Resources
