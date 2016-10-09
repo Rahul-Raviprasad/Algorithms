@@ -149,10 +149,27 @@ Backtracking is a method of exhaustive search using divide and conquer.
 * Tools: algorithms for generating basic objects, such as binary strings[2^n possibilities for n-bit strings], permutations[n!], combinations[n!/r!(n-r!)], general strings [k - ary strings of length n has k^n possibilities], etc ...
 * Backtracking speeds the exhaustive search by pruning.
 
-## Example Algorithms for Backtracking
+### Example Algorithms for Backtracking
 1. Binary Strings: generating all binary strings
-2. Generatign k - ary strings
+2. Generating k - ary strings
 3. The Knapsack problem
 4. Generalized strings
 5. Hamiltonian Cycles
 6. Graph coloring problem
+
+### Backtracking problems
+#### Generate all the strings of n bits. Assume A[0...n-1] is an array of n length.
+```java
+public void Binary(int n) {
+  if (n < 1) {
+    System.out.println(A); // Assume array A is global
+  } else {
+    A[n-1] = 0;
+    Binary(n-1);
+    A[n-1] = 1;
+    Binary(n-1);
+  }
+}
+
+```
+This runs in 2^n time.
