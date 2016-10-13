@@ -57,6 +57,8 @@ Search algorithms, sorting algorithms, merge algorithms, numerical algorithms, g
 * Randomized Algorithm
 * Branch and Bound enumeration and Backtracking used in Artificial intelligence.
 
+## To Do : needs more research
+https://jackmott.github.io/programming/2016/08/20/when-bigo-foolsya.html
 
 ## Resources
 The Algorithms have been studied, taken from many resources online. Few of the significant ones are
