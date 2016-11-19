@@ -17,6 +17,15 @@ Theoretical Study of computer program performance and resource usage.
 9. User friendly
 
 
+### Why study algorithms and performance?
+1. more user friendly, nobody likes a slow application
+2. there are some time constraints on certain app
+3. performance draws the line between what is feasible and infeasible.
+4. becomes important when you want to do stuff nobody's before, when you want to push the limits.
+5. Provides a language to talk about program behavior.
+6. provides the currency for other things like user behavior more functionality.
+7. It's FUN
+
 ## Ways to classify Algorithms
 1. Implementation
 2. Design
