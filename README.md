@@ -1,6 +1,22 @@
 # Algorithms
 My compilation of Popular Algorithms.
 
+
+## Analysis of Algorithm
+Theoretical Study of computer program performance and resource usage.
+
+### What's more important than performance?
+1. correctness
+2. cost
+3. time to market
+4. stability
+5. Maintainability
+6. modularity
+7. security
+8. Scalability
+9. User friendly
+
+
 ## Ways to classify Algorithms
 1. Implementation
 2. Design
