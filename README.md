@@ -82,6 +82,20 @@ Search algorithms, sorting algorithms, merge algorithms, numerical algorithms, g
 * Randomized Algorithm
 * Branch and Bound enumeration and Backtracking used in Artificial intelligence.
 
+### Kinds of Analysis
+Worst case analysis(usually)
+T(n) = max time in any input given of size n
+Average case
+T(n) = expected time over all inputs of size n
+Need assumptions on the statistical distribution of the inputs
+Best case(bogus)
+
+What is the Insertion sorts worst case time?
+
+Asymptotic Analysis
+1. Ignore machine dependent constants
+2. Look at the growth of the running time T(n) as n tends to infinity.
+
 ## To Do : needs more research
 https://jackmott.github.io/programming/2016/08/20/when-bigo-foolsya.html
 
