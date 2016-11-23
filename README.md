@@ -96,6 +96,37 @@ Asymptotic Analysis
 1. Ignore machine dependent constants
 2. Look at the growth of the running time T(n) as n tends to infinity.
 
+Asymptotic notation
+* theta notation
+  drop lower order terms and Ignore leading constants
+  eg: 3n^3 + 90n^2 + 5n + 6 == Theta(n^3)
+
+  As n tends to infinity, theta(n^2) will always beat theta(n^3)
+
+### Problem: Sorting
+  Input: sequence a1, a2 ......, aN
+  Output: a permutation of above sequence a1'<= a2'<= ...... <= aN'
+
+### Insertion Sort
+  Running time
+    * depends on the Input
+    * depends on the input size
+    * want upper bounds
+
+What is the Insertion sorts worst case time?
+  Worst case:  reverse sorted
+  T(n) = theta(n^2)
+
+  fast for small n
+  not fast for large n
+
+#### Merge sort
+Recurrence T(n) = { theta(1) if n=1; 2T(n/2)+ theta(n) if n > 1}
+T(n) = nlogn
+
+so merge sort on big enough input will always beat insertion sort.
+
+
 ## To Do : needs more research
 https://jackmott.github.io/programming/2016/08/20/when-bigo-foolsya.html
 
