@@ -1,4 +1,7 @@
 ## Insertion Sort
+
+Keywords: stable, in-place, efficient for nearly sorted, O(n^2), online, Adaptive
+
 Insertion sort is an algorithm that seeks to sort a list one element at a time. With each iteration, it takes the next element waiting to be sorted, and adds it, in proper location, to those elements that have already been sorted.
 
 ```
