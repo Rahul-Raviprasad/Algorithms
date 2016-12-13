@@ -1,6 +1,6 @@
 ## QuickSort Algorithm
 
-Keywords: most-efficient, unstable, In place 
+Keywords: most-efficient, unstable, In place
 
 ##### About
 Quicksort (sometimes called partition-exchange sort) is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order. Developed by Tony Hoare in 1959, with his work published in 1961, it is still a commonly used algorithm for sorting. When implemented well, it can be about two or three times faster than its main competitors, merge sort and heapsort.
@@ -8,6 +8,24 @@ Quicksort (sometimes called partition-exchange sort) is an efficient sorting alg
 Quicksort is a comparison sort, meaning that it can sort items of any type for which a "less-than" relation (formally, a total order) is defined. In efficient implementations it is not a stable sort, meaning that the relative order of equal sort items is not preserved. Quicksort can operate in-place on an array, requiring small additional amounts of memory to perform the sorting.
 
 Mathematical analysis of quicksort shows that, on average, the algorithm takes O(n log n) comparisons to sort n items. In the worst case, it makes O(n2) comparisons, though this behavior is rare.
+
+```
+Array quickSort(Array data) {
+   if (Array.Length <= 1)
+      return;
+   middle = Array[Array.Length / 2];
+   Array left = new Array();
+   Array right = new Array();
+   for (int i = 0; i < Array.Length; i++)
+      if (i != Array.Length / 2) {
+         if (Array[i] <= middle)
+            left.Add(Array[i]);
+         else
+            right.Add(Array[i]);
+      }
+   return concatenate(quickSort(left), middle, quickSort(right));
+}
+```
 
 #### Some common questions
 ##### Is quicksort stable?
