@@ -21,6 +21,8 @@ There are ways to improve the sorting algorithms, that do not affect their asymp
 
 ////
 
+https://github.com/rust-lang/rust/pull/38192
+
 Use Insertion sort when the probability of the data being already sorted is very high.
 
 Heap is slower than quick and merge sort.
