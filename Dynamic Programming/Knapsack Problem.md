@@ -10,5 +10,10 @@ A 1998 study of the Stony Brook University Algorithm Repository showed that, out
 
 Knapsack problems appear in real-world decision-making processes in a wide variety of fields, such as finding the least wasteful way to cut raw materials, selection of investments and portfolios, selection of assets for asset-backed securitization, and generating keys for the Merkle–Hellman and other knapsack cryptosystems.
 
+
+### Example
+Lets say there is a bag which can hold 7 kg weight. And we have the following items
+weight
+
 ### Resources
 1. WIKI- https://en.wikipedia.org/wiki/Knapsack_problem
